@@ -10,7 +10,6 @@ object Boot {
     val topic = Try(args(1)).getOrElse("testTopic")
     val servers = Try(args(0)).getOrElse("172.22.0.212:9092")
 
-
     val password = Try(args(3)).getOrElse("")
     val encryptionFile = Try(args(4)).getOrElse("")
     val isSSL = Try(args(2).toBoolean).getOrElse(false)
